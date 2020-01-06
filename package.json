@@ -1,0 +1,41 @@
+{
+  "name": "capsule",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Guillaume Paris <guillaumejparis@gmail.com>",
+  "scripts": {
+    "dev": "webpack-dev-server --open --config utils/webpack/dev.config.js",
+    "build": "webpack --config utils/webpack/prod.config.js",
+    "serve-build": "node utils/server/server.js",
+    "lint": "eslint .",
+    "test": "echo No test specified && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guillaumejparis/capsule.git"
+  },
+  "homepage": "https://guillaumejparis.github.io/capsule",
+  "dependencies": {
+    "preact": "^10.0.0",
+    "toastify-js": "https://github.com/guillaumejparis/toastify-js",
+    "wouter-preact": "^2.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-react": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.5.1",
+    "eslint-plugin-react": "^7.16.0",
+    "express": "^4.17.1",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0",
+    "workbox-webpack-plugin": "^4.3.1"
+  }
+}
