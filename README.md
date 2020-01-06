@@ -1,18 +1,18 @@
 <p align="center">
-  <a href="https://guillaumejparis.github.io/capsule" rel="noopener" target="_blank"><img width="150" src="./src/assets/icons/android-chrome-192x192.png" alt="Material-UI logo"></a></p>
+  <a href="https://guillaumejparis.github.io/recipes" rel="noopener" target="_blank"><img width="150" src="./src/assets/icons/android-chrome-192x192.png" alt="Material-UI logo"></a></p>
 </p>
 
-<h1 align="center">Capsule</h1>
+<h1 align="center">Recipes</h1>
 
 <div align="center">
 
-[Preact](https://preactjs.com/) application ([progressive web app](https://developers.google.com/web/progressive-web-apps)) about Capsule.
+[Preact](https://preactjs.com/) application ([progressive web app](https://developers.google.com/web/progressive-web-apps)) to track down our recipes.
 
-![](https://github.com/guillaumejparis/capsule/workflows/Deploy%20to%20Github%20Pages/badge.svg)
+![](https://github.com/guillaumejparis/recipes/workflows/Deploy%20to%20Github%20Pages/badge.svg)
 
 </div>
 
-The [Caspule](https://guillaumejparis.github.io/capsule/) application.
+The [Recipes](https://guillaumejparis.github.io/recipes/) application.
 
 ## Installation
 

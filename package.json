@@ -1,5 +1,5 @@
 {
-  "name": "capsule",
+  "name": "recipes",
   "version": "1.0.0",
   "license": "MIT",
   "author": "Guillaume Paris <guillaumejparis@gmail.com>",
@@ -12,30 +12,32 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/guillaumejparis/capsule.git"
+    "url": "git+https://github.com/guillaumejparis/recipes.git"
   },
-  "homepage": "https://guillaumejparis.github.io/capsule",
+  "homepage": "https://guillaumejparis.github.io/recipes",
   "dependencies": {
-    "preact": "^10.0.0",
+    "preact": "^10.1.1",
+    "preact-markdown": "^2.0.0",
     "toastify-js": "https://github.com/guillaumejparis/toastify-js",
-    "wouter-preact": "^2.2.1"
+    "wouter-preact": "^2.4.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/preset-react": "^7.6.3",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^5.0.4",
-    "css-loader": "^3.2.0",
-    "eslint": "^6.5.1",
-    "eslint-plugin-react": "^7.16.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.1",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.17.0",
     "express": "^4.17.1",
     "file-loader": "^4.2.0",
+    "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
-    "style-loader": "^1.0.0",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.9.0",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
     "workbox-webpack-plugin": "^4.3.1"
   }
 }

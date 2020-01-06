@@ -11,10 +11,15 @@ module.exports = options => ({
     alias: {
       assets: path.resolve(process.cwd(), "src/assets"),
       components: path.resolve(process.cwd(), "src/components"),
+      recipes: path.resolve(process.cwd(), "recipes"),
       routes: path.resolve(process.cwd(), "src/routes")
     },
-    extensions: [".js", ".css"],
-    modules: [path.resolve(__dirname, "src"), "node_modules"]
+    extensions: [".js", ".css", ".md"],
+    modules: [
+      path.resolve(__dirname, "src"),
+      "node_modules",
+      path.resolve(__dirname, "recipes")
+    ]
   },
   module: {
     rules: [
@@ -37,6 +42,17 @@ module.exports = options => ({
         use: [
           {
             loader: "file-loader",
+            options: {
+              name: "[name].[ext]"
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(md)$/,
+        use: [
+          {
+            loader: "html-loader",
             options: {
               name: "[name].[ext]"
             }

@@ -2,3 +2,8 @@
   flex: 1;
   padding: 20px;
 }
+
+.recipes-container {
+  flex: 1;
+  flex-direction: column;
+}

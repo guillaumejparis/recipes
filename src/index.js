@@ -17,7 +17,7 @@ if (module.hot) module.hot.accept("./components/app", init);
 if (process.env.NODE_ENV === "production" && "serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
-      .register("/capsule/service-worker.js")
+      .register("/recipes/service-worker.js")
       .then(registration => {
         console.info("SW registered: ", registration);
         registration.addEventListener("updatefound", () => {

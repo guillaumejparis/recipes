@@ -9,7 +9,7 @@ module.exports = require("./config")({
   mode: "production",
   output: {
     path: path.resolve(process.cwd(), "_build"),
-    publicPath: "/capsule/",
+    publicPath: "/recipes/",
     filename: "[name].[chunkhash:8].js"
   },
   plugins: [
@@ -20,7 +20,8 @@ module.exports = require("./config")({
     new CopyPlugin([
       "src/manifest.json",
       "src/assets/favicon.ico",
-      { from: "src/assets/icons/*.png", to: "assets/icons", flatten: true }
+      { from: "src/assets/icons/*.png", to: "assets/icons", flatten: true },
+      { from: "recipes/*.md" }
     ]),
     new WorkboxPlugin.GenerateSW({
       clientsClaim: true,

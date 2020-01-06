@@ -7,18 +7,18 @@ module.exports = require("./config")({
   mode: "development",
   output: {
     path: path.resolve(process.cwd(), "dist"),
-    publicPath: "/capsule/"
+    publicPath: "/recipes/"
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Capsule",
+      title: "Recipes",
       favicon: "src/assets/favicon.ico"
     })
   ],
   devtool: "inline-source-map",
   devServer: {
-    publicPath: "/capsule/",
-    public: "localhost:8080/capsule",
+    publicPath: "/recipes/",
+    public: "localhost:8080/recipes",
     compress: true,
     hot: true
   }

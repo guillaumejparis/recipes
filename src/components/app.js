@@ -1,18 +1,20 @@
 import { h } from "preact";
 import { Route, Router } from "wouter-preact";
 
-import { makeUseCapsuleLocation } from "routes/router";
+import { makeUseRecipesLocation } from "routes/router";
 import Home from "routes/home";
-import Gallery from "routes/gallery";
+import Recipe from "routes/recipe";
 
-const useCapsuleLocation = makeUseCapsuleLocation("/capsule", true);
+const useRecipesLocation = makeUseRecipesLocation("/recipes", true);
 
 const App = () => {
   return (
     <div id="app">
-      <Router hook={useCapsuleLocation}>
+      <Router hook={useRecipesLocation}>
         <Route path="/" component={Home} />
-        <Route path="/gallery" component={Gallery} />
+        <Route path="/:recipe">
+          {params => <Recipe recipe={params.recipe} />}
+        </Route>
       </Router>
     </div>
   );

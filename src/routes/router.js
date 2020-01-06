@@ -78,7 +78,7 @@ const patchHistoryEvents = () => {
 };
 
 // hash & basepath location
-const makeUseCapsuleLocation = (basepath, hash = false) => () => {
+const makeUseRecipesLocation = (basepath, hash = false) => () => {
   const [location, setLocation] = _useLocation(hash);
 
   let normalized = location;
@@ -94,4 +94,4 @@ const makeUseCapsuleLocation = (basepath, hash = false) => () => {
   ];
 };
 
-export { makeUseCapsuleLocation };
+export { makeUseRecipesLocation };
