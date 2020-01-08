@@ -1,1 +1,1 @@
-export default ["fraise", "fraise mure", "mure"];
+export default [{ name: "Pâte à pizza", filename: "pizza" }];

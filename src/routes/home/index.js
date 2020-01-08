@@ -10,8 +10,8 @@ const Home = () => (
     <div className="recipes-container">
       {recipes.map(recipe => (
         <div key={recipe}>
-          <Link href={`/${recipe}`}>
-            <a className="link">{recipe}</a>
+          <Link href={`/${recipe.filename}`}>
+            <a className="link">{recipe.name}</a>
           </Link>
         </div>
       ))}
