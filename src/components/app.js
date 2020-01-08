@@ -13,7 +13,7 @@ const App = () => {
       <Router hook={useRecipesLocation}>
         <Route path="/" component={Home} />
         <Route path="/:recipe">
-          {params => <Recipe recipe={params.recipe} />}
+          {params => <Recipe recipe={decodeURI(params.recipe)} />}
         </Route>
       </Router>
     </div>
