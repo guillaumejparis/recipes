@@ -18,12 +18,12 @@ Mélanger la farine avec le sel.
 
 ## Pâte
 
-Ajouter le mélange levure-eau.
+1. Ajouter le mélange levure-eau.
 
-Pétrisser au robot pendant 5-10 minutes.
+2. Pétrisser au robot pendant 5-10 minutes.
 
-Laisser pousser la pâte pendant 1 heure au chaud.
+3. Laisser pousser la pâte pendant 1 heure au chaud.
 
 _Préchauffer le four à 200°._
 
-Ajouter vos garnitures et enfourner pour 9 minutes.
+4. Ajouter vos garnitures et enfourner pour 9 minutes.
