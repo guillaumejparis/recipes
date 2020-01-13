@@ -16,7 +16,7 @@ jobs:
           yarn
           yarn lint
           yarn test
-      - name: Deploy to Github pages
+      - name: Deploy to recipes Github pages
         uses: guillaumejparis/gh-actions-deploy-gh-pages@master
         env:
           GIT_DEPLOY_KEY: ${{ secrets.GIT_BLOUP_KEY }}

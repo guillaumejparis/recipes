@@ -8,7 +8,7 @@
 
 [Preact](https://preactjs.com/) application ([progressive web app](https://developers.google.com/web/progressive-web-apps)) to track down our recipes.
 
-![](https://github.com/guillaumejparis/recipes/workflows/Deploy%20to%20Github%20Pages/badge.svg)
+![](https://github.com/guillaumejparis/recipes/workflows/Deploy%20to%20recipes%20Github%20pages/badge.svg)
 
 </div>
 
