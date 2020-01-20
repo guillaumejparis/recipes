@@ -1,5 +1,9 @@
 export default [
   {
+    name: "Cake chorizo-maroilles",
+    filename: "cake-chorizo-maroilles"
+  },
+  {
     name: "Cake noix-chèvre",
     filename: "cake-noix-chevre"
   },
