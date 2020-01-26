@@ -6,7 +6,7 @@
 
 <div align="center">
 
-[Preact](https://preactjs.com/) application ([progressive web app](https://developers.google.com/web/progressive-web-apps)) to track down our recipes.
+[Preact](https://preactjs.com/) application ([progressive web app](https://developers.google.com/web/progressive-web-apps)) to write down our recipes.
 
 ![](https://github.com/guillaumejparis/recipes/workflows/Recipes%20CI/badge.svg)
 
