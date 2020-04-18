@@ -3,7 +3,19 @@
     [
       "@babel/plugin-transform-react-jsx",
       {
-        "pragma": "h"
+        "pragma": "h",
+        "pragmaFrag": "h.Fragment"
+      }
+    ],
+    [
+      "react-css-modules",
+      {
+        "filetypes": {
+          ".scss": {
+            "syntax": "postcss-scss"
+          }
+        },
+        "autoResolveMultipleImports": true
       }
     ]
   ]

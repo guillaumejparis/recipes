@@ -1,0 +1,6 @@
+$-theme: () !default;
+$-shadow: map-get($-theme, 'shadow');
+
+@function get_shadow($elevation: 1) {
+  @return #{map-get($-shadow, $elevation)};
+}

@@ -1,0 +1,19 @@
+@use 'theme/palette-functions' with ($-theme: $theme);
+@use 'theme/typography-functions' with ($-theme: $theme);
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: palette-functions.get-color('background');
+  font-family: #{typography-functions.get('fontFamily')};
+  font-weight: typography-functions.get('fontWeightRegular');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}

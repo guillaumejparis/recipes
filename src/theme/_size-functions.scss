@@ -1,0 +1,11 @@
+$-theme: () !default;
+$-spacing: map-get($-theme, 'spacing');
+$-shape: map-get($-theme, 'shape');
+
+@function get-spacing($multiplier: 2) {
+  @return map-get($-spacing, 'default') * $multiplier + px;
+}
+
+@function get-shape($key) {
+  @return map-get($-shape, $key) + px;
+}

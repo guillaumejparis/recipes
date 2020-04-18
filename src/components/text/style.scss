@@ -1,0 +1,46 @@
+@use 'theme/palette-functions' with ($-theme: $theme);
+@use 'theme/typography-functions' with ($-theme: $theme);
+
+.text {
+  margin: 0;
+}
+
+.gutter-bottom {
+  margin-bottom: 0.35em;
+}
+
+.color-primary {
+  color: palette-functions.get-color('text', 'primary');
+}
+
+.color-secondary {
+  color: palette-functions.get-color('text', 'secondary');
+}
+
+.color-light {
+  color: palette-functions.get-color('text', 'light');
+}
+
+.color-white {
+  color: palette-functions.get-color('text', 'white');
+}
+
+.h1 {
+  @include typography-functions.get-typography('h1');
+}
+
+.h2 {
+  @include typography-functions.get-typography('h2');
+}
+
+.h5 {
+  @include typography-functions.get-typography('h5');
+}
+
+.body1 {
+  @include typography-functions.get-typography('body1');
+}
+
+.body2 {
+  @include typography-functions.get-typography('body2');
+}

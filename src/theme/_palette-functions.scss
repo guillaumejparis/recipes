@@ -1,0 +1,11 @@
+$-theme: () !default;
+$-palette: map-get($-theme, 'palette');
+
+@function get-color($key: 'primary', $variant: 'default') {
+  $map: map-get($-palette, $key);
+  @return map-get($map, $variant);
+}
+
+@function get-text-color($key: 'text', $variant: 'primary') {
+  @return map-get(map-get($-palette, $key), $variant);
+}

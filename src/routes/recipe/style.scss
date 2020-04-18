@@ -1,0 +1,5 @@
+@use 'theme/size-functions' with ($-theme: $theme);
+
+.container {
+  padding: size-functions.get-spacing();
+}

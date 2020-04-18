@@ -4,7 +4,9 @@
     "paths": {
       "assets/*": ["./assets/*"],
       "components/*": ["./components/*"],
-      "routes/*": ["./routes/*"]
+      "hooks/*": ["./hooks/*"],
+      "routes/*": ["./routes/*"],
+      "theme/*": ["./theme/*"]
     }
   },
   "exclude": ["node_modules"]
