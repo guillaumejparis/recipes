@@ -1,4 +1,3 @@
-```markdown
 # Filet mignon aux champignons et marrons
 
 > Pour 4 personnes.
@@ -27,4 +26,3 @@ Emincer les échalotes et les gousses d'ail.
 3. Ajouter le filet mignon, les champignons, les marrons, le thym et le vin blanc.
 
 **Cuire 40 min en fermant la cocotte.**
-```

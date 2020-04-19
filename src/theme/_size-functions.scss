@@ -1,0 +1,16 @@
+$-theme: () !default;
+$-icon: map-get($-theme, 'icon');
+$-shape: map-get($-theme, 'shape');
+$-spacing: map-get($-theme, 'spacing');
+
+@function get-icon($key) {
+  @return map-get($-icon, $key) + px;
+}
+
+@function get-shape($key) {
+  @return map-get($-shape, $key) + px;
+}
+
+@function get-spacing($multiplier: 2) {
+  @return map-get($-spacing, 'default') * $multiplier + px;
+}

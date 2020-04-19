@@ -4,7 +4,10 @@
     "paths": {
       "assets/*": ["./assets/*"],
       "components/*": ["./components/*"],
-      "routes/*": ["./routes/*"]
+      "hooks/*": ["./hooks/*"],
+      "recipes/*": ["./recipes/*"],
+      "routes/*": ["./routes/*"],
+      "theme/*": ["./theme/*"]
     }
   },
   "exclude": ["node_modules"]

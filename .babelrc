@@ -3,7 +3,21 @@
     [
       "@babel/plugin-transform-react-jsx",
       {
-        "pragma": "h"
+        "pragma": "h",
+        "pragmaFrag": "h.Fragment"
+      }
+    ],
+    "@babel/plugin-proposal-optional-chaining",
+    "@babel/plugin-proposal-nullish-coalescing-operator",
+    [
+      "react-css-modules",
+      {
+        "filetypes": {
+          ".scss": {
+            "syntax": "postcss-scss"
+          }
+        },
+        "autoResolveMultipleImports": true
       }
     ]
   ]

@@ -1,0 +1,78 @@
+@use 'theme/breakpoint-functions' with ($-theme: $theme);
+@use 'theme/palette-functions' with ($-theme: $theme);
+@use 'theme/shadow-functions' with ($-theme: $theme);
+@use 'theme/size-functions' with ($-theme: $theme);
+
+.button {
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  height: 100%;
+  width: 72px;
+}
+
+.container {
+  $color: palette-functions.get-color('background');
+  $spacing: size-functions.get-spacing();
+  background: linear-gradient(rgba($color, 1), rgba($color, 0));
+  display: flex;
+  height: calc(72px + #{$spacing});
+  justify-content: space-between;
+  padding-bottom: $spacing;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.ghost-container {
+  margin-bottom: 72px;
+}
+
+.home-icon {
+  color: palette-functions.get-color();
+  font-size: size-functions.get-icon('md');
+}
+
+.image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: shadow-functions.get-shadow();
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.left {
+  height: 100%;
+}
+.left-home {
+  $spacing: size-functions.get-spacing(8);
+  align-items: center;
+  background-color: palette-functions.get-color();
+  border-radius: 0 0 size-functions.get-shape('borderRadius') 0;
+  box-shadow: shadow-functions.get-shadow();
+  display: flex;
+  padding: 0 $spacing 0 $spacing;
+}
+.left-recipe {
+  cursor: pointer;
+  padding-right: size-functions.get-spacing(9);
+}
+
+.right {
+  height: 100%;
+}
+.right-image {
+  width: 100%;
+}
+@media screen and (min-width: breakpoint-functions.get_breakpoint('md')) {
+  .right-image {
+    display: none;
+  }
+}
+
+.search-icon {
+  color: palette-functions.get-color();
+  font-size: size-functions.get-icon('md');
+}

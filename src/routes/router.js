@@ -1,9 +1,9 @@
-import { useEffect, useRef, useState, useCallback } from "preact/hooks";
+import { useEffect, useRef, useState, useCallback } from 'preact/hooks';
 
 // https://github.com/molefrog/wouter/blob/master/use-location.js
-const _useLocation = hash => {
+const _useLocation = (hash) => {
   const [path, update] = useState(
-    `${location.pathname}${hash ? location.hash : ""}`
+    `${location.pathname}${hash ? location.hash : ''}`,
   );
   const prevPath = useRef(path);
 
@@ -17,17 +17,17 @@ const _useLocation = hash => {
     const checkForUpdates = () => {
       return (
         prevPath.current !==
-          `${location.pathname}${hash ? location.hash : ""}` &&
+          `${location.pathname}${hash ? location.hash : ''}` &&
         update(
           (prevPath.current = `${location.pathname}${
-            hash ? location.hash : ""
-          }`)
+            hash ? location.hash : ''
+          }`),
         )
       );
     };
 
-    const events = ["popstate", "pushState", "replaceState"];
-    events.map(e => addEventListener(e, checkForUpdates));
+    const events = ['popstate', 'pushState', 'replaceState'];
+    events.map((e) => addEventListener(e, checkForUpdates));
 
     // it's possible that an update has occurred between render and the effect handler,
     // so we run additional check on mount to catch these updates. Based on:
@@ -35,7 +35,7 @@ const _useLocation = hash => {
 
     checkForUpdates();
 
-    return () => events.map(e => removeEventListener(e, checkForUpdates));
+    return () => events.map((e) => removeEventListener(e, checkForUpdates));
   }, []);
 
   // the 2nd argument of the `useLocation` return value is a function
@@ -44,7 +44,7 @@ const _useLocation = hash => {
   // the function reference should stay the same between re-renders, so that
   // it can be passed down as an element prop without any performance concerns.
   const navigate = useCallback((to, replace) => {
-    history[replace ? "replaceState" : "pushState"](0, 0, to);
+    history[replace ? 'replaceState' : 'pushState'](0, 0, to);
   }, []);
 
   return [path, navigate];
@@ -61,10 +61,10 @@ let patched = 0;
 const patchHistoryEvents = () => {
   if (patched) return;
 
-  ["pushState", "replaceState"].map(type => {
+  ['pushState', 'replaceState'].map((type) => {
     const original = history[type];
 
-    history[type] = function() {
+    history[type] = function () {
       const result = original.apply(this, arguments);
       const event = new Event(type);
       event.arguments = arguments;
@@ -90,7 +90,7 @@ const makeUseRecipesLocation = (basepath, hash = false) => () => {
 
   return [
     normalized,
-    to => setLocation(hash ? `${basepath}/#${to}` : `${basepath}${to}`)
+    (to) => setLocation(hash ? `${basepath}/#${to}` : `${basepath}${to}`),
   ];
 };
 

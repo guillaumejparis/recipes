@@ -1,18 +1,24 @@
-import { h } from "preact";
-import { Link } from "wouter-preact";
-import Markdown from "preact-markdown";
-import "./style";
-import "./github-markdown.css";
+import { h } from 'preact';
+import { useEffect, useState } from 'preact/hooks';
+import Markdown from 'preact-markdown';
 
-const Recipe = ({ recipe }) => (
-  <div className="recipe">
-    <Link href="/">
-      <a className="link">Home</a>
-    </Link>
-    <div className="markdown-body">
-      <Markdown markdown={require(`recipes/${recipe}`)} />
+import './github-markdown.scss';
+import './style.scss';
+
+const Recipe = ({ recipe }) => {
+  const [markdown, setMarkdown] = useState(null);
+  useEffect(() => {
+    import(
+      /* webpackChunkName: "recipe-[request]" */ `recipes/${recipe}`
+    ).then(({ default: markdown }) => setMarkdown(markdown));
+  }, []);
+  return (
+    <div styleName="container">
+      <div styleName="markdown-body">
+        {markdown && <Markdown markdown={markdown} />}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Recipe;

@@ -1,0 +1,15 @@
+$-theme: () !default;
+$-typography: map-get($-theme, 'typography');
+
+@function get($key) {
+  @return map-get($-typography, $key);
+}
+
+@mixin get-typography($key) {
+  $-values: map-get($-typography, $key);
+  font-family: #{map-get($-values, 'fontFamily')};
+  font-weight: map-get($-values, 'fontWeight');
+  font-size: map-get($-values, 'fontSize');
+  line-height: map-get($-values, 'lineHeight');
+  letter-spacing: map-get($-values, 'letterSpacing');
+}
