@@ -1,21 +1,31 @@
-import { h } from "preact";
-import { Link } from "wouter-preact";
-import recipes from "recipes";
-import "./style";
+import { h } from 'preact';
+import { useLocation } from 'wouter-preact';
 
-const Home = () => (
-  <div className="home">
-    <h1>Recipes</h1>
-    <div className="recipes-container">
-      {recipes.map(recipe => (
-        <div key={recipe}>
-          <Link href={`/${recipe.filename}`}>
-            <a className="link">{recipe.name}</a>
-          </Link>
-        </div>
-      ))}
+import Card from 'components/card';
+
+import recipes from 'recipes';
+
+import styles from './style.scss';
+
+const Home = () => {
+  const [, setLocation] = useLocation();
+
+  return (
+    <div styleName="container">
+      <div styleName="recipes-container">
+        {recipes.map(({ filename, photo, title, subTitle }) => (
+          <Card
+            className={styles.card}
+            image={photo}
+            key={title}
+            onClick={() => setLocation(`/${filename}`)}
+            title={title}
+            subTitle={subTitle}
+          />
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Home;
