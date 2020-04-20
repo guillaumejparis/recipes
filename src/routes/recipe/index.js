@@ -11,7 +11,7 @@ const Recipe = ({ recipe }) => {
     import(
       /* webpackChunkName: "recipe-[request]" */ `recipes/${recipe}`
     ).then(({ default: markdown }) => setMarkdown(markdown));
-  }, []);
+  }, [recipe]);
   return (
     <div styleName="container">
       <div styleName="markdown-body">
