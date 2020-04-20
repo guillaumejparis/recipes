@@ -11,16 +11,17 @@
 }
 
 .container {
-  $color: palette-functions.get-color('background');
   $spacing: size-functions.get-spacing();
-  background: linear-gradient(rgba($color, 1), rgba($color, 0));
   display: flex;
-  height: calc(72px + #{$spacing});
+  height: 72px;
   justify-content: space-between;
-  padding-bottom: $spacing;
   position: fixed;
   top: 0;
   width: 100%;
+}
+.container-scrolled-from-top {
+  background: palette-functions.get-color();
+  box-shadow: shadow-functions.get-shadow();
 }
 
 .ghost-container {
@@ -31,22 +32,21 @@
   color: palette-functions.get-color();
   font-size: size-functions.get-icon('md');
 }
+.container-scrolled-from-top .home-icon {
+  color: palette-functions.get-color('common', 'white');
+}
 
 .left {
   height: 100%;
 }
 .left-home {
-  $spacing: size-functions.get-spacing(8);
+  $spacing: size-functions.get-spacing();
   align-items: center;
-  background-color: palette-functions.get-color();
-  border-radius: 0 0 size-functions.get-shape('borderRadius') 0;
-  box-shadow: shadow-functions.get-shadow();
   display: flex;
-  padding: 0 $spacing 0 $spacing;
+  padding-left: $spacing;
 }
 .left-recipe {
   cursor: pointer;
-  padding-right: size-functions.get-spacing(9);
 }
 
 .right {
@@ -56,4 +56,7 @@
 .search-icon {
   color: palette-functions.get-color();
   font-size: size-functions.get-icon('md');
+}
+.container-scrolled-from-top .search-icon {
+  color: palette-functions.get-color('common', 'white');
 }

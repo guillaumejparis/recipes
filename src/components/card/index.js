@@ -9,7 +9,7 @@ const Card = ({ className, image, onClick, title, subTitle }) => (
   <div styleName="container" className={className} onClick={onClick}>
     {image && <Image alt={title} className={styles.image} {...image} />}
     <div styleName="content">
-      <Text component="h2" gutterBottom variant="h5">
+      <Text component="h2" gutterBottom variant="h6">
         {title}
       </Text>
       <Text color="secondary" variant="body2">

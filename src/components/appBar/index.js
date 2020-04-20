@@ -4,17 +4,23 @@ import { useRecipesLocation } from 'components/app';
 import Text from 'components/text';
 
 import { useRecipe } from 'hooks/recipe';
+import { useScroll } from 'hooks/scroll';
 
 import './style.scss';
 
 const AppBar = () => {
   const [, setLocation] = useRecipesLocation();
   const [recipe] = useRecipe();
+  const [scrolledFromTop] = useScroll();
 
   return (
     <>
       <div styleName="ghost-container" />
-      <div styleName="container">
+      <div
+        styleName={`${
+          scrolledFromTop ? 'container-scrolled-from-top' : ''
+        } container`}
+      >
         <div
           onClick={() => setLocation('/')}
           styleName={`${recipe ? 'left-recipe' : 'left-home'} left`}
@@ -24,7 +30,10 @@ const AppBar = () => {
               <i className="fas fa-home" styleName="home-icon" />
             </button>
           ) : (
-            <Text color="white" variant="h5">
+            <Text
+              color={scrolledFromTop ? 'white' : 'app-primary'}
+              variant="h5"
+            >
               Recettes
             </Text>
           )}
