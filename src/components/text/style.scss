@@ -9,6 +9,10 @@
   margin-bottom: 0.35em;
 }
 
+.color-app-primary {
+  color: palette-functions.get-color();
+}
+
 .color-primary {
   color: palette-functions.get-color('text', 'primary');
 }
@@ -35,6 +39,10 @@
 
 .h5 {
   @include typography-functions.get-typography('h5');
+}
+
+.h6 {
+  @include typography-functions.get-typography('h6');
 }
 
 .body1 {

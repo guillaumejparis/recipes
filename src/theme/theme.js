@@ -39,6 +39,7 @@ module.exports = {
     shadow: {
       0: 'none',
       1: '"0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)"',
+      4: '"0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)"',
     },
     shape: {
       borderRadius: 4,
@@ -74,6 +75,13 @@ module.exports = {
         fontSize: '1.5rem',
         lineHeight: 1.334,
         letterSpacing: '0em',
+      },
+      h6: {
+        fontFamily: '"system-ui, Roboto, Helvetica, Arial, sans-serif"',
+        fontWeight: 500,
+        fontSize: '1.25rem',
+        lineHeight: 1.6,
+        letterSpacing: '0.0075em',
       },
       body1: {
         fontFamily: '"system-ui, Roboto, Helvetica, Arial, sans-serif"',

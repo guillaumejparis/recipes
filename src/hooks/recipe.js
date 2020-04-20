@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'preact/hooks';
+
 import { useRecipesLocation } from 'components/app';
+
 import recipes from 'recipes';
 
 const useRecipe = () => {
