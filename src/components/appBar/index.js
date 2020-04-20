@@ -1,12 +1,11 @@
 import { h } from 'preact';
 
 import { useRecipesLocation } from 'components/app';
-import Image from 'components/image';
 import Text from 'components/text';
 
 import { useRecipe } from 'hooks/recipe';
 
-import styles from './style.scss';
+import './style.scss';
 
 const AppBar = () => {
   const [, setLocation] = useRecipesLocation();
@@ -30,14 +29,7 @@ const AppBar = () => {
             </Text>
           )}
         </div>
-        <div styleName={`${recipe?.photo ? 'right-image' : ''} right`}>
-          {recipe?.photo && (
-            <Image
-              alt={recipe.title}
-              className={styles.image}
-              {...recipe.photo}
-            />
-          )}
+        <div styleName="right">
           {!recipe && (
             <button styleName="button">
               <i className="fas fa-search" styleName="search-icon" />

@@ -1,4 +1,3 @@
-@use 'theme/breakpoint-functions' with ($-theme: $theme);
 @use 'theme/palette-functions' with ($-theme: $theme);
 @use 'theme/shadow-functions' with ($-theme: $theme);
 @use 'theme/size-functions' with ($-theme: $theme);
@@ -33,16 +32,6 @@
   font-size: size-functions.get-icon('md');
 }
 
-.image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: shadow-functions.get-shadow();
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-}
-
 .left {
   height: 100%;
 }
@@ -62,14 +51,6 @@
 
 .right {
   height: 100%;
-}
-.right-image {
-  width: 100%;
-}
-@media screen and (min-width: breakpoint-functions.get_breakpoint('md')) {
-  .right-image {
-    display: none;
-  }
 }
 
 .search-icon {
