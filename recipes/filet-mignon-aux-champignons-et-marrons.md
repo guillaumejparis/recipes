@@ -21,7 +21,8 @@ Emincer les échalotes et les gousses d'ail.
 1. Faire revenir le filet sur toutes les faces dans le beurre et l'huile d'olive. Saler, poivrer et réserver.
 
 2. Faire revenir les échalottes et l'ail avec du beurre.
-	> Dans une cocotte.
+
+   > Dans une cocotte.
 
 3. Ajouter le filet mignon, les champignons, les marrons, le thym et le vin blanc.
 

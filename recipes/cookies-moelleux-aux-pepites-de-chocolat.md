@@ -1,34 +1,31 @@
 # Cookies moelleux aux pépites de chocolat
 
-## Ingrédients : 
+## Ingrédients
 
-- 85 g de beurre à température ambiante
-- 200 g de farine
-- 1/2 sachet de levure
-- 150 g de sucre roux
-- 1 oeuf
-- 150 g de chocolat
-- 100 g de noisettes
-- 1 pincée de sel
+- Beurre pommade | 85 g |
+- Farine | 200 g |
+- Levure chimique | 5 g |
+- Sucre roux | 150 g |
+- Oeuf | 1 |
+- Chocolat | 150 g |
+- Noisettes | 100 g |
+- Sel fin | 1 pincée |
 
-## 
+## Cookies
 
-Préchauffez le four à 200 °C. 
+_Préchauffer le four à 200°._
 
-Mélanger le beurre et le sucre pendant 5 minutes. 
+1. Mélanger le beurre et le sucre pendant 5 minutes.
 
-Ajoutez la farine, la levure, le sel puis œuf.
+2. Ajouter la farine, la levure, le sel puis l'oeuf.
 
-Concasser les noisettes torréfiées au four.
+3. Concasser les noisettes torréfiées au four.
 
-Ajouter les noisettes et pépites de chocolat noir au mélange.
+4. Ajouter les noisettes et pépites de chocolat noir au mélange.
 
-Sur une plaque recouverte de papier de papier cuisson, déposez des petites boules de pâtes.
+5. Sur une plaque recouverte de papier de papier cuisson, déposez des petites boules de pâtes.
 
-Enfourner pendant 8 minutes.
+**Cuire 8 min.**
 
-
-
-Variante de recette: 
-
-Remplacer les noisettes par 5 g de thé matcha.
+> Variante de recette:
+> Remplacer les noisettes par 5 g de thé matcha.
