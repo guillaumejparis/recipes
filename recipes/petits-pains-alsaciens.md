@@ -1,51 +1,46 @@
 # Petits Pains Alsaciens
 
-## Ingrédients : 
+## Ingrédients
 
-#### Pour les 12 empreintes allongées
+> Pour 12 petits pains environ
 
-La pâte:
+#### Pâte
 
-- 500 g de farine
-- 8 g de sel fin
-- 150 ml d'eau
-- 1 cube de levure fraîche
-- 150 ml de lait tiède
-- 30 g de beurre pommade
+- Farine | 500 g |
+- Levure fraîche | 1 (25 g) |
+  > Il est possible de la faire avec de la levure déshydratée.
+- Eau | 150 ml |
+- Lait tiède | 150 ml |
+- Beurre pommage | 30 g |
+- Sel | 8 g |
 
-Pour le bain:
+#### Bain
 
-- 1/2 L d'eau
-- 2 cuillères à café de sel
-- 40 g de bicarbonate
+- Eau | 50 cl |
+- Sel | 2 cuillères à café |
+- Bicarbonate | 40 g |
 
-Pour la finition
+#### Finition
 
-- 1 œuf
-- Du gros sel, du carvi ou du cumin
+- Oeuf | 1 |
+- Gros sel ou Carvi ou Cumin
 
-## 
+### Pâte
 
-Mélanger la farine, le sel et l'eau. Dans un bol tiédir le lait et mélanger la levure fraîche avec. Ajouter les deux mélange et le beurre. Pétrir pendant 5 minutes.
+1. Mélanger la farine, le sel et l'eau. Dans un bol tiédir le lait et mélanger la levure fraîche avec. Ajouter les deux mélange et le beurre. Pétrir pendant 5 minutes.
 
-Recouvrir le bol d'un torchon humide et laisser lever la pâte pendant un heure afin qu'elle double de volume. 
+2. Recouvrir le bol d'un torchon humide et laisser lever la pâte pendant un heure afin qu'elle double de volume.
 
-Préchauffez le four à 200°c.
+_Préchauffer le four à 200°._
 
-Dans une casserole mélanger l'eau, le sel et le bicarbonate. Faites chauffer 5 minutes jusqu'à ce que le mélange bouillonne.
+3. Dans une casserole mélanger l'eau, le sel et le bicarbonate. Faites chauffer 5 minutes jusqu'à ce que le mélange bouillonne.
 
-Diviser le pâte en formant 12 petits pains de pâte. 
+4. Diviser le pâte en formant 12 petits pains de pâte.
 
-Façonnez-les aux dimension des empreintes.
+5. Façonnez-les aux dimension des empreintes.
 
-Plongez-les entièrement dans le bain bouillant, retirez-les immédiatement et posez-les dans les empreintes.
+6. Plongez-les entièrement dans le bain bouillant, retirez-les immédiatement et posez-les dans les empreintes.
 
-Passez-les aux pinceau avec œuf battu, striez-les avec la lame incisette, saupoudrez-les de gros sel, de carvi ou de pavot.
+7. Passez-les aux pinceau avec œuf battu, striez-les avec la lame incisette, saupoudrez-les de gros sel, de carvi ou de pavot.
 
-Mettez au four pendant environ 12 min.
-
-
-
-Suggestion: 
-
-Ces petits pains salés peuvent être cuits dans des empreintes plus petites afin de former des petits biscuits apéritifs (navettes, mini-financiers).
+**Cuire 12 min.**

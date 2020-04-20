@@ -25,7 +25,7 @@ export default [
     subTitle: 'Filet mignon aux champignons et marrons',
     filename: 'filet-mignon-aux-champignons-et-marrons',
   },
-  { title: 'Gnocchis', subtitle: 'Gnocchis', filename: 'gnocchis' },
+  { title: 'Gnocchis', subTitle: 'Gnocchis', filename: 'gnocchis' },
   {
     title: 'Pizza',
     subTitle: 'Pâte à pizza',
@@ -37,7 +37,7 @@ export default [
   },
   {
     title: 'Sauce parmesan',
-    subtitle: 'Sauce parmesan',
+    subTitle: 'Sauce parmesan',
     filename: 'sauce-parmesan',
   },
 ];
