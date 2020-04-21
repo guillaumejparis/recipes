@@ -20,8 +20,9 @@
   width: 100%;
 }
 .container-scrolled-from-top {
-  background: palette-functions.get-color();
+  background-color: palette-functions.get-color();
   box-shadow: shadow-functions.get-shadow();
+  transition: background-color 300ms, box-shadow 300ms;
 }
 
 .ghost-container {

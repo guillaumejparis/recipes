@@ -4,7 +4,7 @@
       "@babel/plugin-transform-react-jsx",
       {
         "pragma": "h",
-        "pragmaFrag": "h.Fragment"
+        "pragmaFrag": "Fragment"
       }
     ],
     "@babel/plugin-proposal-optional-chaining",

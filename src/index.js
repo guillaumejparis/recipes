@@ -4,7 +4,7 @@ import 'toastify-js/src/toastify.css';
 
 import App from 'components/app';
 
-import './style.scss';
+import styles from './style.scss';
 
 let root;
 
@@ -31,11 +31,7 @@ if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
                   duration: 30000,
                   gravity: 'top',
                   position: 'right',
-                  className: {
-                    color: 'white',
-                  },
-                  backgroundColor:
-                    'linear-gradient(to right, #34515e, #607d8b)',
+                  className: styles.toast,
                   onClick: () => location.reload(),
                 }).showToast();
               }
