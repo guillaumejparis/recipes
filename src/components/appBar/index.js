@@ -4,14 +4,16 @@ import { useRecipesLocation } from 'components/app';
 import Text from 'components/text';
 
 import { useRecipe } from 'hooks/recipe';
-import { useScroll } from 'hooks/scroll';
+import { useScrolledFromTop } from 'hooks/scroll';
+
+import { getSpacing } from 'theme/themeHelper';
 
 import './style.scss';
 
 const AppBar = () => {
   const [, setLocation] = useRecipesLocation();
   const [recipe] = useRecipe();
-  const [scrolledFromTop] = useScroll();
+  const [scrolledFromTop] = useScrolledFromTop(getSpacing());
 
   return (
     <>

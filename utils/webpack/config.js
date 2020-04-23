@@ -1,7 +1,8 @@
 /* eslint-disable no-undef */
 
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const webpack = require('webpack');
 const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = (options) => ({
   mode: options.mode,
@@ -94,7 +95,14 @@ module.exports = (options) => ({
       },
     ],
   },
-  plugins: [new CleanWebpackPlugin(), ...options.plugins],
+  plugins: [
+    new CleanWebpackPlugin(),
+    new webpack.ProvidePlugin({
+      h: ['preact', 'h'],
+      Fragment: ['preact', 'Fragment'],
+    }),
+    ...options.plugins,
+  ],
   devtool: options.devtool,
   devServer: options.devServer,
 });

@@ -1,5 +1,5 @@
 {
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
   "env": {
     "browser": true,
     "node": true
@@ -18,7 +18,8 @@
   },
   "settings": {
     "react": {
-      "pragma": "h"
+      "pragma": "h",
+      "version": "preact"
     }
   }
 }
