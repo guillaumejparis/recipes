@@ -3,21 +3,35 @@
   <head>
     <noscript>Javascript required</noscript>
     <meta charset="utf-8" />
-    <title>Recipes</title>
+    <title>Recettes</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimal-ui"
     />
-    <meta name="description" content="Recipes" />
+    <meta name="description" content="Recettes" />
+
+    <link id="manifest" rel="manifest" />
+
+    <meta name="theme-color" content="#546e7a" />
+
+    <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Recettes" />
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Recettes" />
+
     <meta name="msapplication-TileColor" content="#546e7a" />
     <meta
       name="msapplication-TileImage"
       content="./assets/icons/mstile-150x150.png"
     />
-    <meta name="apple-mobile-web-app-title" content="Recipes" />
-    <meta name="application-name" content="Recipes" />
+
     <meta name="format-detection" content="telephone=no" />
-    <meta name="theme-color" content="#546e7a" />
+
+    <!-- Homescreen icons -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -36,12 +50,18 @@
       sizes="16x16"
     />
     <link rel="shortcut icon" href="./favicon.ico" />
-    <link rel="manifest" href="./manifest.json" />
     <script
       src="https://kit.fontawesome.com/39bd93c7e2.js"
       crossorigin="anonymous"
       defer
     ></script>
+    <script>
+      if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
+        document.getElementById('manifest').href = './ios/manifest.json';
+      } else {
+        document.getElementById('manifest').href = './manifest.json';
+      }
+    </script>
   </head>
   <body></body>
 </html>

@@ -18,7 +18,8 @@ module.exports = require('./config')({
       minify: { collapseWhitespace: true },
     }),
     new CopyPlugin([
-      'src/manifest.json',
+      { from: 'src/manifest.ios.json', to: 'ios/manifest.json' },
+      { from: 'src/manifest.base.json', to: 'manifest.json' },
       'src/assets/favicon.ico',
       { from: 'src/assets/icons/*.png', to: 'assets/icons', flatten: true },
     ]),
