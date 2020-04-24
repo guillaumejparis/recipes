@@ -56,7 +56,11 @@
       defer
     ></script>
     <script>
-      if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
+      if (
+        !!navigator.platform &&
+        (/iPad|iPhone|iPod/.test(navigator.platform) ||
+          (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1))
+      ) {
         document.getElementById('manifest').href = './ios/manifest.json';
       } else {
         document.getElementById('manifest').href = './manifest.json';
