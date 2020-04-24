@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useContext, useEffect, useState } from 'preact/hooks';
 
-import { useRecipesLocation } from 'components/app';
+import { RecipesContext, useRecipesLocation } from 'components/app';
 
 import recipes from 'recipes';
 
 const useRecipe = () => {
+  const [, setRecipes] = useContext(RecipesContext);
   const [recipe, setRecipe] = useState(null);
   const [location] = useRecipesLocation();
 
@@ -12,7 +13,7 @@ const useRecipe = () => {
     setRecipe(recipes.find(({ filename }) => location.includes(filename)));
   }, [location]);
 
-  return [recipe];
+  return [recipe, setRecipes];
 };
 
 export { useRecipe };
