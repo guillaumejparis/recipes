@@ -8,6 +8,7 @@
     "build": "webpack --config utils/webpack/prod.config.js",
     "serve-build": "node utils/server/server.js",
     "lint": "eslint .",
+    "prettier": "prettier --check .",
     "test": "echo No test specified && exit 0"
   },
   "repository": {
