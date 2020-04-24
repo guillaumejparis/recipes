@@ -16,7 +16,6 @@ jobs:
         run: |
           yarn
           yarn lint
-          yarn prettier
           yarn test
       - name: Deploy to recipes Github pages
         uses: guillaumejparis/gh-actions-deploy-gh-pages@master
