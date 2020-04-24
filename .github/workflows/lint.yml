@@ -25,6 +25,6 @@ jobs:
       - name: Run linters
         uses: samuelmeuli/lint-action@v1
         with:
-          github_token: ${{ secrets.GIT_BLOUP_KEY }}
+          github_token: ${{ secrets.github_token }}
           eslint: true
           prettier: true
