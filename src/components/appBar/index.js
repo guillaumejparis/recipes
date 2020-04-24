@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import { useContext, useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
 
 import { recipesFuse, useRecipesLocation } from 'components/app';
 import Text from 'components/text';
