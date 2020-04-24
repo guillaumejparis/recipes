@@ -3,10 +3,8 @@ name: Recipes CI
 on:
   push:
     branches:
-      - test
-  pull_request:
-    branches:
       - master
+      - test
 
 jobs:
   deploy-github-pages:
