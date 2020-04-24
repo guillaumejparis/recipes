@@ -16,6 +16,7 @@
   },
   "homepage": "https://guillaumejparis.github.io/recipes",
   "dependencies": {
+    "fuse.js": "^5.2.3",
     "preact": "^10.4.0",
     "preact-markdown": "^2.0.0",
     "toastify-js": "^1.7.0",

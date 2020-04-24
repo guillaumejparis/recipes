@@ -1,14 +1,7 @@
 @use 'theme/palette-functions' with ($-theme: $theme);
 @use 'theme/shadow-functions' with ($-theme: $theme);
 @use 'theme/size-functions' with ($-theme: $theme);
-
-.button {
-  background: 0 0;
-  border: 0;
-  cursor: pointer;
-  height: 100%;
-  width: 72px;
-}
+@use 'theme/typography-functions' with ($-theme: $theme);
 
 .container {
   $spacing: size-functions.get-spacing();
@@ -18,46 +11,66 @@
   position: fixed;
   top: 0;
   width: 100%;
+
+  .button {
+    background: 0 0;
+    border: 0;
+    cursor: pointer;
+    height: 100%;
+    padding: 0;
+    width: 72px;
+  }
+
+  .left {
+    height: 100%;
+  }
+  .left-home {
+    $spacing: size-functions.get-spacing();
+    align-items: center;
+    display: flex;
+    padding-left: $spacing;
+  }
+  .left-recipe {
+    cursor: pointer;
+  }
+
+  .form {
+    display: flex;
+    flex: 1;
+
+    .input {
+      @include typography-functions.get-typography('h5');
+      background: 0 0;
+      border: 0;
+      flex: 1;
+      height: 100%;
+      outline: 0;
+      padding: 0 0 0 size-functions.get-spacing();
+    }
+  }
+
+  .icon {
+    color: palette-functions.get-color();
+    font-size: size-functions.get-icon('md');
+  }
 }
-.container-scrolled-from-top {
+.container--scrolled-from-top {
   background-color: palette-functions.get-color();
   box-shadow: shadow-functions.get-shadow();
   transition: background-color 300ms, box-shadow 300ms;
+  .icon {
+    color: palette-functions.get-color('common', 'white');
+  }
+}
+.container--search {
+  background-color: palette-functions.get-color('common', 'white');
+  box-shadow: shadow-functions.get-shadow();
+  transition: background-color 300ms, box-shadow 300ms;
+  .icon {
+    color: palette-functions.get-color();
+  }
 }
 
 .ghost-container {
   margin-bottom: 72px;
-}
-
-.home-icon {
-  color: palette-functions.get-color();
-  font-size: size-functions.get-icon('md');
-}
-.container-scrolled-from-top .home-icon {
-  color: palette-functions.get-color('common', 'white');
-}
-
-.left {
-  height: 100%;
-}
-.left-home {
-  $spacing: size-functions.get-spacing();
-  align-items: center;
-  display: flex;
-  padding-left: $spacing;
-}
-.left-recipe {
-  cursor: pointer;
-}
-
-.right {
-  height: 100%;
-}
-
-.search-icon {
-  color: palette-functions.get-color();
-  font-size: size-functions.get-icon('md');
-}
-.container-scrolled-from-top .search-icon {
-  color: palette-functions.get-color('common', 'white');
 }
