@@ -28,6 +28,15 @@ yarn
 yarn dev
 ```
 
+## Add a new photo
+
+[Squoosh](https://squoosh.app/)
+Sizes :
+xl | 1920
+lg | 1280
+md | 960
+sm | 600
+
 ## More
 
 Using [own](https://github.com/guillaumejparis/gh-actions-deploy-gh-pages) github action to deploy to github pages.

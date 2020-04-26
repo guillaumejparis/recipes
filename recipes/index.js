@@ -16,6 +16,15 @@ export default [
   },
   {
     title: 'Cookies',
+    subTitle: 'Cookies chocolat corn-flakes',
+    filename: 'cookies-chocolat-corn-flakes',
+    photo: {
+      extension: 'jpg',
+      name: 'cookies-chocolat-corn-flakes',
+    },
+  },
+  {
+    title: 'Cookies',
     subTitle: 'Cookies moelleux aux pépites de chocolat',
     filename: 'cookies-moelleux-aux-pepites-de-chocolat',
   },
