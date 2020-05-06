@@ -3,6 +3,14 @@
 @use 'theme/size-functions' with ($-theme: $theme);
 @use 'theme/font-functions';
 
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  height: 40px;
+  margin: size-functions.get-spacing(1.5);
+  overflow: hidden;
+}
+
 .container {
   background-color: palette-functions.get-color('background', 'paper');
   border-radius: size-functions.get-shape('borderRadius');
@@ -20,7 +28,7 @@
 }
 
 .content {
-  padding: size-functions.get-spacing(2);
+  margin: size-functions.get-spacing();
 }
 
 .image {
@@ -30,4 +38,10 @@
   height: 140px;
   object-fit: cover;
   width: 100%;
+}
+
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

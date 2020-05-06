@@ -4,6 +4,7 @@ import './style.scss';
 
 const Text = ({
   children,
+  className,
   color = 'primary',
   component,
   gutterBottom,
@@ -16,11 +17,23 @@ const Text = ({
   }`;
 
   if (component === 'h1') {
-    return <h1 styleName={styleName}>{content}</h1>;
+    return (
+      <h1 className={className} styleName={styleName}>
+        {content}
+      </h1>
+    );
   } else if (component === 'h2') {
-    return <h2 styleName={styleName}>{content}</h2>;
+    return (
+      <h2 className={className} styleName={styleName}>
+        {content}
+      </h2>
+    );
   }
-  return <p styleName={styleName}>{content}</p>;
+  return (
+    <p className={className} styleName={styleName}>
+      {content}
+    </p>
+  );
 };
 
 export default Text;
