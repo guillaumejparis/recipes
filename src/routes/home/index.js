@@ -15,13 +15,15 @@ const Home = () => {
     <div styleName="container">
       <div styleName="recipes-container">
         {recipes.map((recipe) => {
-          const { filename, photo, title, subTitle } = recipe.item || recipe;
+          const { filename, photo, tags, title, subTitle } =
+            recipe.item || recipe;
           return (
             <Card
               className={styles.card}
               image={photo}
               key={title}
               onClick={() => setLocation(`/${filename}`)}
+              tags={tags}
               title={title}
               subTitle={subTitle}
             />

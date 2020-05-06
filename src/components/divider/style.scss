@@ -1,0 +1,14 @@
+@use 'theme/palette-functions' with ($-theme: $theme);
+@use 'theme/size-functions' with ($-theme: $theme);
+
+.container {
+  background-color: rgba(0, 0, 0, 0.12);
+  border: 0;
+  height: 1px;
+  margin: 0;
+}
+
+.middle {
+  margin-left: size-functions.get-spacing();
+  margin-right: size-functions.get-spacing();
+}
