@@ -1,4 +1,4 @@
-export default [
+﻿export default [
   {
     title: 'Bretzels',
     subTitle: 'Petits Pains Alsaciens',
@@ -11,6 +11,12 @@ export default [
     subTitle: '',
     tags: ['Plat principal', 'Cake'],
     filename: 'cake-chorizo-maroilles',
+  },
+  {
+    title: 'Cake courgette olives fêta',
+    subTitle: '',
+    tags: ['Plat principal', 'Cake', 'Sans gluten'],
+    filename: 'cake-courgette-olives-feta',
   },
   {
     title: 'Cake noix-chèvre',
