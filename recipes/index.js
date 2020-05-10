@@ -17,6 +17,10 @@
     subTitle: '',
     tags: ['Plat principal', 'Cake', 'Sans gluten'],
     filename: 'cake-courgette-olives-feta',
+    photo: {
+      extension: 'jpg',
+      name: 'cake-courgette-olives-feta',
+    },
   },
   {
     title: 'Cake noix-chèvre',
