@@ -2,13 +2,29 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "assets/*": ["./assets/*"],
-      "components/*": ["./components/*"],
-      "hooks/*": ["./hooks/*"],
-      "recipes/*": ["./recipes/*"],
-      "routes/*": ["./routes/*"],
-      "theme/*": ["./theme/*"]
+      "assets/*": [
+        "./assets/*"
+      ],
+      "components/*": [
+        "./components/*"
+      ],
+      "hooks/*": [
+        "./hooks/*"
+      ],
+      "recipes/*": [
+        "./recipes/*"
+      ],
+      "routes/*": [
+        "./routes/*"
+      ],
+      "theme/*": [
+        "./theme/*"
+      ]
     }
   },
-  "exclude": ["node_modules"]
+  "exclude": [
+    ".github",
+    ".yarn",
+    "_build"
+  ]
 }

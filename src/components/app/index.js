@@ -21,7 +21,7 @@ export const recipesFuse = new Fuse(recipes, {
 export const useRecipesLocation = makeUseRecipesLocation('/recipes', true);
 export const RecipesContext = createContext({
   recipes: [],
-  setRecipes: () => {},
+  setRecipes: () => { },
 });
 
 const App = () => {

@@ -7,7 +7,7 @@
     "dev": "webpack-dev-server --config utils/webpack/dev.config.js",
     "build": "webpack --config utils/webpack/prod.config.js",
     "serve-build": "node utils/server/server.js",
-    "lint": "eslint . && prettier --check . --ignore-path .gitignore",
+    "lint": "eslint .",
     "test": "echo No test specified && exit 0"
   },
   "repository": {
@@ -16,6 +16,7 @@
   },
   "homepage": "https://guillaumejparis.github.io/recipes",
   "dependencies": {
+    "@yarnpkg/pnpify": "^2.0.0-rc.22",
     "fuse.js": "^5.2.3",
     "preact": "^10.4.0",
     "preact-markdown": "^2.0.0",
@@ -44,7 +45,6 @@
     "html-webpack-plugin": "^4.2.0",
     "postcss-loader": "^3.0.0",
     "postcss-scss": "^2.0.0",
-    "prettier": "^2.0.4",
     "sass": "^1.26.3",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.3",

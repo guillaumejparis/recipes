@@ -1,71 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <noscript>Javascript required</noscript>
-    <meta charset="utf-8" />
-    <title>Recettes</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimal-ui"
-    />
-    <meta name="description" content="Recettes" />
 
-    <link id="manifest" rel="manifest" />
+<head>
+  <noscript>Javascript required</noscript>
+  <meta charset="utf-8" />
+  <title>Recettes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui" />
+  <meta name="description" content="Recettes" />
 
-    <meta name="theme-color" content="#546e7a" />
+  <link id="manifest" rel="manifest" />
 
-    <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="application-name" content="Recettes" />
+  <meta name="theme-color" content="#546e7a" />
 
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="apple-mobile-web-app-title" content="Recettes" />
+  <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="Recettes" />
 
-    <meta name="msapplication-TileColor" content="#546e7a" />
-    <meta
-      name="msapplication-TileImage"
-      content="./assets/icons/mstile-150x150.png"
-    />
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Recettes" />
 
-    <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-TileColor" content="#546e7a" />
+  <meta name="msapplication-TileImage" content="./assets/icons/mstile-150x150.png" />
 
-    <!-- Homescreen icons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="./assets/icons/favicon-32x32.png"
-      sizes="32x32"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="./assets/icons/favicon-16x16.png"
-      sizes="16x16"
-    />
-    <link rel="shortcut icon" href="./favicon.ico" />
-    <script
-      src="https://kit.fontawesome.com/39bd93c7e2.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <script>
-      if (
-        !!navigator.platform &&
-        (/iPad|iPhone|iPod/.test(navigator.platform) ||
-          (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1))
-      ) {
-        document.getElementById('manifest').href = './ios/manifest.json';
-      } else {
-        document.getElementById('manifest').href = './manifest.json';
-      }
-    </script>
-  </head>
-  <body></body>
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- Homescreen icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="./assets/icons/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./assets/icons/favicon-16x16.png" sizes="16x16" />
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <script src="https://kit.fontawesome.com/39bd93c7e2.js" crossorigin="anonymous" defer></script>
+  <script>
+    if (
+      !!navigator.platform &&
+      (/iPad|iPhone|iPod/.test(navigator.platform) ||
+        (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1))
+    ) {
+      document.getElementById('manifest').href = './ios/manifest.json';
+    } else {
+      document.getElementById('manifest').href = './manifest.json';
+    }
+  </script>
+</head>
+
+<body></body>
+
 </html>

@@ -1,6 +1,4 @@
-node_modules
+.yarn/*
+!/.yarn/releases
 /*.log
-
-_build
-
-.idea
+_build 
