@@ -1,3 +1,4 @@
-.yarn
+.yarn/*
+!/.yarn/releases
 /*.log
 _build 
