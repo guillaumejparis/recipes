@@ -14,7 +14,7 @@ const Text = ({
   const content = children || text;
   const styleName = `text ${variant} color-${color} ${
     gutterBottom ? 'gutter-bottom' : ''
-  }`;
+    }`;
 
   if (component === 'h1') {
     return (

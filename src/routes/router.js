@@ -3,7 +3,7 @@ import { useEffect, useRef, useState, useCallback } from 'preact/hooks';
 // https://github.com/molefrog/wouter/blob/master/use-location.js
 const _useLocation = (hash) => {
   const [path, update] = useState(
-    `${location.pathname}${hash ? location.hash : ''}`,
+    `${location.pathname}${hash ? location.hash : ''}`
   );
   const prevPath = useRef(path);
 
@@ -17,11 +17,11 @@ const _useLocation = (hash) => {
     const checkForUpdates = () => {
       return (
         prevPath.current !==
-          `${location.pathname}${hash ? location.hash : ''}` &&
+        `${location.pathname}${hash ? location.hash : ''}` &&
         update(
           (prevPath.current = `${location.pathname}${
             hash ? location.hash : ''
-          }`),
+            }`)
         )
       );
     };
