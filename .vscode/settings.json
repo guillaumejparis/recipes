@@ -1,3 +1,4 @@
 {
-  "autoimport.filesToScan": "**/*.{js}"
+  "autoimport.filesToScan": "**/*.{js}",
+  "eslint.nodePath": ".vscode/pnpify"
 }

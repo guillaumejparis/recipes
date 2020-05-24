@@ -1,5 +1,8 @@
 {
-  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
   "env": {
     "browser": true,
     "node": true
@@ -13,7 +16,15 @@
     }
   },
   "rules": {
-    "no-console": ["error", { "allow": ["info", "error"] }],
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "info",
+          "error"
+        ]
+      }
+    ],
     "react/prop-types": "off"
   },
   "settings": {
