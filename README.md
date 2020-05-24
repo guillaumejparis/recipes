@@ -1,4 +1,8 @@
-[![Material-UI logo](./src/assets/icons/android-chrome-192x192.png)](https://guillaumejparis.github.io/recipes)
+<div align="center">
+  <a href="https://guillaumejparis.github.io/recipes" rel="noopener" target="_blank">
+  <img width="150" src="./src/assets/icons/android-chrome-192x192.png" alt="Material-UI logo">
+</a>
+</div>
 
 # Recipes
 
@@ -24,14 +28,7 @@ yarn dev
 
 ## Add a new photo
 
-[Squoosh](https://squoosh.app/)
-
-Sizes :
-
-- xl | 1920
-- lg | 1280
-- md | 960
-- sm | 600
+[Squoosh](https://squoosh.app/) Sizes : xl | 1920 lg | 1280 md | 960 sm | 600
 
 ## More
 

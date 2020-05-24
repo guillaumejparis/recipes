@@ -90,4 +90,10 @@
     tags: ['Accompagnement'],
     filename: 'sauce-parmesan',
   },
+  {
+    title: 'Taboulé',
+    subTitle: '',
+    tags: ['Plat principal'],
+    filename: 'taboule',
+  },
 ];
