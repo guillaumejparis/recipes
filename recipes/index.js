@@ -45,10 +45,10 @@
     filename: 'cookies-moelleux-aux-pepites-de-chocolat',
   },
   {
-    title: 'Pâte à crêpes',
+    title: 'English muffins',
     subTitle: '',
-    tags: ['Dessert'],
-    filename: 'pate-a-crepes',
+    tags: ['Plat principal'],
+    filename: 'english-muffins',
   },
   {
     title: 'Filets de truite en papillote',
@@ -67,6 +67,24 @@
     subTitle: '',
     tags: ['Plat principal'],
     filename: 'gnocchis',
+  },
+  {
+    title: 'Lamingtons',
+    subTitle: '',
+    tags: ['Dessert'],
+    filename: 'lamingtons',
+  },
+  {
+    title: 'Pain pita',
+    subTitle: '',
+    tags: ['Plat principal'],
+    filename: 'pain-pita',
+  },
+  {
+    title: 'Pâte à crêpes',
+    subTitle: '',
+    tags: ['Dessert'],
+    filename: 'pate-a-crepes',
   },
   {
     title: 'Pâte à pizza',
