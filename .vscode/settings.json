@@ -6,4 +6,5 @@
   "autoimport.filesToScan": "**/*.{js}",
   "eslint.nodePath": ".vscode/pnpify",
   "files.insertFinalNewline": true,
+  "git.ignoreLimitWarning": true,
 }
