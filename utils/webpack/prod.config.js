@@ -17,12 +17,14 @@ module.exports = require('./config')({
       template: 'src/index.ejs',
       minify: { collapseWhitespace: true },
     }),
-    new CopyPlugin([
-      { from: 'src/manifest.ios.json', to: 'ios/manifest.json' },
-      { from: 'src/manifest.base.json', to: 'manifest.json' },
-      'src/assets/favicon.ico',
-      { from: 'src/assets/icons/*.png', to: 'assets/icons', flatten: true },
-    ]),
+    new CopyPlugin({
+      patterns: [
+        { from: 'src/manifest.ios.json', to: 'ios/manifest.json' },
+        { from: 'src/manifest.base.json', to: 'manifest.json' },
+        'src/assets/favicon.ico',
+        { from: 'src/assets/icons/*.png', to: 'assets/icons', flatten: true },
+      ],
+    }),
     new WorkboxPlugin.GenerateSW({
       clientsClaim: true,
       exclude: [/^recipe-.*\.js$|\.(jpg|png)$/],

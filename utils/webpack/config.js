@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
 
-const webpack = require('webpack');
-const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const path = require('path');
+const webpack = require('webpack');
 
 module.exports = (options) => ({
   mode: options.mode,
@@ -20,7 +20,6 @@ module.exports = (options) => ({
     extensions: ['.js', '.css', '.md', '.scss'],
     modules: [
       path.resolve(__dirname, 'src'),
-      'node_modules',
       path.resolve(__dirname, 'recipes'),
     ],
   },
@@ -28,24 +27,23 @@ module.exports = (options) => ({
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: require.resolve('babel-loader'),
           options: {
-            presets: ['@babel/preset-react'],
+            presets: [require.resolve('@babel/preset-react')],
           },
         },
       },
       {
         test: /\.(css)$/,
-        use: ['style-loader', 'css-loader'],
+        use: [require.resolve('style-loader'), require.resolve('css-loader')],
       },
       {
         test: /\.(scss)$/,
         use: [
-          'style-loader',
+          require.resolve('style-loader'),
           {
-            loader: 'css-loader',
+            loader: require.resolve('css-loader'),
             options: {
               modules: {
                 localIdentName: '[path]___[name]__[local]___[hash:base64:5]',
@@ -53,7 +51,7 @@ module.exports = (options) => ({
             },
           },
           {
-            loader: 'sass-loader',
+            loader: require.resolve('sass-loader'),
             options: {
               implementation: require('sass'),
               sassOptions: {
@@ -62,7 +60,7 @@ module.exports = (options) => ({
             },
           },
           {
-            loader: '@epegzz/sass-vars-loader',
+            loader: require.resolve('@epegzz/sass-vars-loader'),
             options: {
               syntax: 'scss',
               files: [path.resolve(process.cwd(), 'src/theme/theme.js')],
@@ -74,7 +72,7 @@ module.exports = (options) => ({
         test: /\.(jpg|png)$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: require.resolve('file-loader'),
             options: {
               name: '[name].[ext]',
             },
@@ -84,7 +82,7 @@ module.exports = (options) => ({
       {
         test: /\.md$/,
         use: {
-          loader: 'html-loader',
+          loader: require.resolve('html-loader'),
           options: {
             attributes: false,
             minimize: {
