@@ -19,9 +19,12 @@ _Préchauffer le four à 180°._
 
 ## Cake
 
-1. Râper la courgette. L’essorer dans du papier absorbant.
+1. Râper la courgette. L'essorer dans du papier absorbant.
+
 2. Couper la fêta en dés.
-3. Mélanger l’huile, le lait et les œufs. Ajouter la farine, la levure et le fromage râpé, puis la courgette râpée, les olives, les dés de fêta et la menthe ciselée.
+
+3. Mélanger l'huile, le lait et les œufs. Ajouter la farine, la levure et le fromage râpé, puis la courgette râpée, les olives, les dés de fêta et la menthe ciselée.
+
 4. Mélanger le tout et verser la préparation dans un moule à cake.
 
 **Cuire 45 min.**
