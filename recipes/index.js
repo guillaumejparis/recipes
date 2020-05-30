@@ -1,5 +1,12 @@
 ﻿export default [
   {
+    title: 'Banana bread RP',
+    subTitle: '',
+    tags: ['Gouter', 'Petit déjeuner'],
+    ingredients: [],
+    filename: 'banana-bread-rp',
+  },
+  {
     title: 'Bretzels',
     subTitle: 'Petits Pains Alsaciens',
     tags: ['Entrée', 'Alsace', 'Végétarien'],
@@ -31,7 +38,7 @@
   {
     title: 'Cookies chocolat corn-flakes',
     subTitle: '',
-    tags: ['Dessert', 'Gouter', 'Chocolat', 'Cookies'],
+    tags: ['Dessert', 'Gouter', 'Chocolat'],
     filename: 'cookies-chocolat-corn-flakes',
     photo: {
       extension: 'jpg',
@@ -41,8 +48,14 @@
   {
     title: 'Cookies moelleux aux pépites de chocolat',
     subTitle: '',
-    tags: ['Dessert', 'Gouter', 'Chocolat', 'Cookies'],
+    tags: ['Dessert', 'Gouter', 'Chocolat'],
     filename: 'cookies-moelleux-aux-pepites-de-chocolat',
+  },
+  {
+    title: 'Cookies RP',
+    subTitle: '',
+    tags: ['Dessert', 'Gouter', 'Chocolat'],
+    filename: 'cookies-rp',
   },
   {
     title: 'English muffins',
