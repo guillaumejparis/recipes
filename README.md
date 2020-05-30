@@ -4,13 +4,15 @@
 </a>
 </div>
 
-# Recipes
+<div>
+  <h1 align="center">Recipes</h1>
+</div>
 
 <div align="center"><a href="https://preactjs.com/">Preact</a> application (<a href="https://developers.google.com/web/progressive-web-apps">progressive web app</a>) to write down our recipes.
 
 <img src="https://github.com/guillaumejparis/recipes/workflows/Recipes%20CI/badge.svg" alt=""></div>
 
-The [Recipes](https://guillaumejparis.github.io/recipes/) application.
+> [Recipes](https://guillaumejparis.github.io/recipes/) application.
 
 ## Installation
 
@@ -26,10 +28,15 @@ yarn
 yarn dev
 ```
 
-## Add a new photo
+### Add a new photo
 
-[Squoosh](https://squoosh.app/) Sizes : xl | 1920 lg | 1280 md | 960 sm | 600
+[Squoosh](https://squoosh.app/)
 
-## More
+- xl | 1920px
+- lg | 1280px
+- md | 960px
+- sm | 600px
+
+### More
 
 Using [own](https://github.com/guillaumejparis/gh-actions-deploy-gh-pages) github action to deploy to github pages.
