@@ -21,5 +21,6 @@ module.exports = require('./config')({
     public: 'localhost:8080/recipes',
     compress: true,
     hot: true,
+    // host: '0.0.0.0', FOR EXTERNAL TESTING
   },
 });
