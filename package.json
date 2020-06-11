@@ -7,6 +7,7 @@
     "dev": "webpack-dev-server --config utils/webpack/dev.config.js",
     "build": "webpack --config utils/webpack/prod.config.js",
     "serve-build": "node utils/server/server.js",
+    "serve-build-external": "node utils/server/server.js --host 0.0.0.0",
     "lint": "eslint .",
     "test": "echo No test specified && exit 0"
   },

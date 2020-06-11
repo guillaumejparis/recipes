@@ -3,3 +3,5 @@
 !/.yarn/plugins
 /*.log
 _build 
+
+.DS_Store

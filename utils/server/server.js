@@ -2,7 +2,11 @@
 const express = require('express');
 
 const PORT = 1234;
-const HOST = '127.0.0.1';
+let HOST = '127.0.0.1';
+
+if (process.argv[2] === '--host' && process.argv[3]) {
+  HOST = process.argv[3];
+}
 
 const app = express();
 app.use('/recipes', express.static('_build'));
