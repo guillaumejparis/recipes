@@ -8,9 +8,13 @@
   <h1 align="center">Recipes</h1>
 </div>
 
-<div align="center"><a href="https://preactjs.com/">Preact</a> application (<a href="https://developers.google.com/web/progressive-web-apps">progressive web app</a>) to write down our recipes.
+<div align="center">
 
-<img src="https://github.com/guillaumejparis/recipes/workflows/Recipes%20CI/badge.svg" alt=""></div>
+[Preact](https://preactjs.com/) application ([progressive web app](https://developers.google.com/web/progressive-web-apps)) to write down our recipes.
+
+![](https://github.com/guillaumejparis/recipes/workflows/Recipes%20CI/badge.svg)
+
+</div>
 
 > [Recipes](https://guillaumejparis.github.io/recipes/) application.
 
