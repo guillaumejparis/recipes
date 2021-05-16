@@ -1,5 +1,14 @@
 {
-  "files.insertFinalNewline": true,
-  "git.ignoreLimitWarning": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "eslint.format.enable": true,
+  // "files.insertFinalNewline": true,
+  // "git.ignoreLimitWarning": true,
+  // "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.nodePath": ".vscode/pnpify",
+  "eslint.format.enable": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

@@ -1,11 +1,8 @@
 import { h, createContext } from "preact";
 import { useReducer, useState, useEffect } from "preact/hooks";
 import { Route, Router } from "wouter-preact";
-import Fuse from "fuse.js";
 
 import AppBar from "components/appBar";
-
-import recipes from "recipes";
 
 import Home from "routes/home";
 import Recipe from "routes/recipe";
@@ -13,11 +10,6 @@ import { makeUseRecipesLocation } from "routes/router";
 
 import "./style.scss";
 
-export const recipesFuse = new Fuse(recipes, {
-  keys: ["title", "subTitle"],
-  minMatchCharLength: 2,
-  threshold: 0.4,
-});
 export const useRecipesLocation = makeUseRecipesLocation("/recipes", true);
 export const RecipesContext = createContext();
 
@@ -45,7 +37,7 @@ const App = () => {
 
   return (
     <div styleName="container">
-      {recipes.length && (
+      {recipes.length > 0 && (
         <RecipesContext.Provider
           value={useReducer(recipesReducer, { hasPhoto: false, recipes })}
         >

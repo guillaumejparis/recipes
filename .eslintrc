@@ -1,7 +1,8 @@
 {
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "prettier"
   ],
   "env": {
     "browser": true,
@@ -37,10 +38,6 @@
     ],
     "no-tabs": [
       "error"
-    ],
-    "quotes": [
-      "error",
-      "single"
     ],
     "react/prop-types": "off",
     "semi": [
