@@ -1,10 +1,5 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "editor.formatOnSave": true,
-  "autoimport.filesToScan": "**/*.{js}",
-  "eslint.nodePath": ".vscode/pnpify",
   "files.insertFinalNewline": true,
   "git.ignoreLimitWarning": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 }

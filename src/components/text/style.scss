@@ -45,6 +45,10 @@
   @include typography-functions.get-typography('h6');
 }
 
+.title {
+  @include typography-functions.get-typography('title');
+}
+
 .body1 {
   @include typography-functions.get-typography('body1');
 }

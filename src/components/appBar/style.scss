@@ -53,6 +53,10 @@
     color: palette-functions.get-color();
     font-size: size-functions.get-icon('md');
   }
+
+  .icon-grayed-out {
+    color: palette-functions.get-color('primary', 'light');
+  }
 }
 .container--scrolled-from-top {
   background-color: palette-functions.get-color();

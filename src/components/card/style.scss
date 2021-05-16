@@ -1,4 +1,5 @@
 @use 'theme/palette-functions' with ($-theme: $theme);
+@use 'theme/typography-functions' with ($-theme: $theme);
 @use 'theme/shadow-functions' with ($-theme: $theme);
 @use 'theme/size-functions' with ($-theme: $theme);
 @use 'theme/font-functions';
@@ -12,15 +13,14 @@
 }
 
 .container {
-  background-color: palette-functions.get-color('background', 'paper');
-  border-radius: size-functions.get-shape('borderRadius');
+  background-color: palette-functions.get-color("background", "paper");
+  border-radius: size-functions.get-shape("borderRadius");
   box-shadow: shadow-functions.get_shadow();
   cursor: pointer;
   display: flex;
-  flex: 1;
   flex-direction: column;
-  justify-content: flex-end;
-  overflow: hidden;
+  width: 180px;
+  height: 120px;
 }
 
 .container:hover {
@@ -28,20 +28,21 @@
 }
 
 .content {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  // justify-content: center;
+  flex-direction: column;
   margin: size-functions.get-spacing();
+  text-align: center;
 }
 
-.image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 140px;
-  object-fit: cover;
-  width: 100%;
+.titleContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 .title {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  font-weight: typography-functions.get("fontWeightBold");
 }

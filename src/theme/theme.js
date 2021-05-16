@@ -16,9 +16,9 @@ module.exports = {
         '"white"': '#fff',
       },
       primary: {
-        default: '#546e7a',
-        light: '#819ca9',
-        dark: '#29434e',
+        default: '#2e7d32',
+        light: '#60ad5e',
+        dark: '#005005',
       },
       accent: {
         default: '#ffd740',
@@ -26,7 +26,7 @@ module.exports = {
         dark: '#c8a600',
       },
       background: {
-        default: '#f5f5f5',
+        default: '#f9fbe7',
         paper: '#fff',
       },
       text: {
@@ -82,6 +82,13 @@ module.exports = {
         fontSize: '1.25rem',
         lineHeight: 1.6,
         letterSpacing: '0.0075em',
+      },
+      title: {
+        fontFamily: '"Montserrat, system-ui, Roboto, Helvetica, Arial, sans-serif"',
+        fontWeight: 500,
+        fontSize: '2.125rem',
+        lineHeight: 1.235,
+        letterSpacing: '0.00735em',
       },
       body1: {
         fontFamily: '"system-ui, Roboto, Helvetica, Arial, sans-serif"',

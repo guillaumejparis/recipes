@@ -1,28 +1,38 @@
-import { h } from 'preact';
-import { useContext } from 'preact/hooks';
-import { useLocation } from 'wouter-preact';
+import { h } from "preact";
+import { useContext } from "preact/hooks";
+import { useLocation } from "wouter-preact";
 
-import { RecipesContext } from 'components/app';
-import Card from 'components/card';
+import { RecipesContext } from "components/app";
+import Card from "components/card";
+import Text from "components/text";
 
-import styles from './style.scss';
+import styles from "./style.scss";
 
 const Home = () => {
-  const [recipes] = useContext(RecipesContext);
+  const [{ hasPhoto, recipes }] = useContext(RecipesContext);
   const [, setLocation] = useLocation();
 
   return (
     <div styleName="container">
+      <Text className={styles.title} color="app-primary" variant="title">
+        Basilic
+      </Text>
       <div styleName="recipes-container">
         {recipes.map((recipe) => {
-          const { filename, photo, tags, title, subTitle } =
+          const { filename, url, photo, tags, title, subTitle } =
             recipe.item || recipe;
           return (
             <Card
               className={styles.card}
-              image={photo}
+              image={hasPhoto && photo}
               key={title}
-              onClick={() => setLocation(`/${filename}`)}
+              onClick={() => {
+                if (filename) {
+                  setLocation(`/${filename}`);
+                } else {
+                  window.open(url, "_blank");
+                }
+              }}
               tags={tags}
               title={title}
               subTitle={subTitle}
