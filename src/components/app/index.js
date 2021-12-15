@@ -28,7 +28,7 @@ const App = () => {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    fetch("https://choupis.best/static/recipes.json").then(function (response) {
+    fetch("https://jeanmomo.site/static-recipes/recipes.json").then(function (response) {
       return response.json().then(function (json) {
         setRecipes(json.recipes);
       });
