@@ -1,0 +1,1 @@
+(window.webpackJsonprecipes=window.webpackJsonprecipes||[]).push([[232],{5779:n=>{n.exports="# Rochers noix de coco\n\n_Préchauffer le four à 200°._\n\n## Ingrédients\n\n- Noix de coco | 125 g |\n- Blanc d'oeufs | 3 |\n- Sucre | 80 g |\n\n## Rochers\n\n1. Mélanger tous les ingrédients.\n\n2. Façonner des dômes.\n\n**Cuire 12 min.**\n"}}]);
